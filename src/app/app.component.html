@@ -1,0 +1,16 @@
+<div class="notice">
+  <h1 class="text-center-xs">Parrot Social</h1>
+  <img src="./images/parrot-social-line-drawing.png" alt="Parrot Social Line Drawing Mascot">
+  <p>
+    Parrot Social is a small group of students at Missouri State University that are trying to organize and refine social events with student input.
+  </p>
+  <h3 [innerHTML]="joinHeading"></h3>
+  <p>We are looking for help with our products from the following groups;</p>
+  <dl *ngFor="let position of positions">
+    <dt [innerHTML]="position.title"></dt>
+    <dd class="description">{{position.desc}}</dd>
+  </dl>
+  <p>
+    Join our team by sending an email to <a href="mailto:cole.lawrence@parrot.social?Subject=I want to join Parrot Social">cole.lawrence@parrot.social</a>
+  </p>
+</div>
